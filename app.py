@@ -62,7 +62,7 @@ if user_prompt:
     st.write(response['answer'])
 
     ## With a streamlit expander
-    With st.expander("Document similarity Search"):
+    with st.expander("Document similarity Search"):
         for i,doc in enumerate(response['context']):
             st.write(doc.page_content)
             st.write('------------------------')
